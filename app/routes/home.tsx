@@ -1,13 +1,13 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import LRBCLanding from "../components/LRBCLanding";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "LRBC - Lalit Raj Business Consultancy" },
+    { name: "description", content: "Expert business consultancy for manufacturing, automation, and management." },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return <LRBCLanding />;
 }
