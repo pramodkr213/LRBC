@@ -45,13 +45,14 @@ export default function LRBCLanding() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
       {/* Progress Bar */}
-      <div className="fixed top-0 left-0 h-1 bg-blue-600 z-[60] transition-all duration-100 ease-out" style={{ width: `${scrollProgress}%` }}></div>
+      <div className="fixed top-0 left-0 h-1 bg-petrol-600 z-[60] transition-all duration-100 ease-out" style={{ width: `${scrollProgress}%` }}></div>
 
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-white/90 backdrop-blur-xl shadow-lg py-3" : "bg-transparent py-5"}`}>
         <div className="container mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-2 group cursor-pointer" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
-            <div className="w-10 h-10 bg-petrol-600 rounded-xl flex items-center justify-center text-white font-black text-xl shadow-[0_0_15px_rgba(13,74,92,0.4)] group-hover:rotate-12 transition-transform">L</div>
-            <span className={`text-2xl font-black tracking-tighter ${scrolled ? "text-slate-950" : "text-white"}`}>LRBC</span>
+            <div className="bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-lg shadow-sm border border-white/10 hover:shadow-md transition-all">
+              <img src="/Lrbc.png" alt="LRBC Logo" className="h-10 sm:h-12 w-auto object-contain" />
+            </div>
           </div>
           
           {/* Desktop Menu */}
@@ -105,37 +106,37 @@ export default function LRBCLanding() {
               <span className="text-white/80 font-black uppercase tracking-[0.4em] text-[15px]">Empowering 30+ Companies with Strategic Precision</span>
             </div>
             
-            <h1 className="reveal-on-scroll text-5xl sm:text-6xl md:text-7xl lg:text-[7.5rem] font-black text-white mb-8 md:mb-12 leading-[0.9] md:leading-[0.8] tracking-tighter">
-              Boost Your <br className="hidden sm:block" /> 
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-petrol-600 via-cyan-high to-teal-400">Business</span>
+            <h1 className="animate-fade-in-up text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white mb-8 md:mb-12 leading-[1] md:leading-[0.95] tracking-tighter" style={{animationDelay: '100ms'}}>
+              The Future of Indian Manufacturing: <br className="hidden sm:block" /> 
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-petrol-600 via-cyan-high to-teal-400">Systems that Scale.</span>
             </h1>
 
-            <p className="reveal-on-scroll text-lg md:text-xl lg:text-2xl text-white/50 mb-12 md:mb-16 max-w-3xl font-medium leading-relaxed tracking-tight">
-              Bridging the gap between heavy manufacturing and digital intelligence. Engineering technical resilience for Indian industry since 2018.
+            <p className="animate-fade-in-up text-lg md:text-xl lg:text-2xl text-white/50 mb-12 md:mb-16 max-w-3xl font-medium leading-relaxed tracking-tight" style={{animationDelay: '300ms'}}>
+              Building the foundational systems that transform messy operations into organised, high-growth organisations. We empower MSMEs and manufacturing plants to move beyond daily "firefighting" and into strategic growth.
             </p>
 
-            <div className="reveal-on-scroll flex flex-col sm:flex-row items-center gap-10 mb-20">
-              <a href="#contact" className="w-full sm:w-auto bg-petrol-600 text-white px-14 py-7 rounded-3xl text-2xl font-black hover:bg-petrol-700 transition-all shadow-[0_30px_60px_-15px_rgba(13,74,92,0.4)] active:scale-95 group flex items-center gap-3">
-                Request Audit
+            <div className="animate-fade-in-up flex flex-col sm:flex-row items-center gap-10 mb-20" style={{animationDelay: '500ms'}}>
+              <a href="#contact" className="w-full sm:w-auto bg-petrol-600 text-white px-10 py-5 rounded-2xl text-xl font-black hover:bg-petrol-700 transition-all shadow-[0_30px_60px_-15px_rgba(13,74,92,0.4)] hover:scale-105 active:scale-95 group flex items-center gap-3">
+                Initiate Your Audit
                 <svg className="w-6 h-6 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
               </a>
-              <a href="#workpilot" className="w-full sm:w-auto text-white/70 border-b-2 border-white/20 px-4 py-4 text-2xl font-black hover:text-petrol-600 hover:border-cyan-high transition-all">Explore Work Pilot v4.12</a>
+              <a href="#workpilot" className="w-full sm:w-auto text-white/70 border-b-2 border-white/20 px-4 py-4 text-xl font-black hover:text-petrol-600 hover:border-cyan-high transition-all hover:translate-x-2">Explore Work Pilot Intelligence</a>
             </div>
 
             {/* Accreditation Trust Bar */}
-            <div className="flex flex-wrap items-center gap-6 md:gap-10 opacity-60 grayscale hover:grayscale-0 transition-all duration-700">
+            <div className="animate-fade-in-up flex flex-wrap items-center gap-6 md:gap-10 opacity-80" style={{animationDelay: '700ms'}}>
 
-               <div className="flex flex-col items-start border-l-2 border-white/20 pl-4 md:pl-6">
-                  <span className="text-white text-[18px] md:text-[24px] font-black uppercase tracking-[0.3em] mb-1">MSME Certified</span>
-                  <span className="text-white/60 text-[16px] md:text-[22px] font-bold font-mono">UDYAM-TS-02-0312494</span>
+               <div className="flex flex-col items-start border-l-2 border-white/20 pl-4 md:pl-6 hover:translate-x-2 transition-transform duration-300">
+                  <span className="text-white text-[14px] md:text-[16px] font-black uppercase tracking-[0.3em] mb-1 text-cyan-high">MSME Certified</span>
+                  <span className="text-white/80 text-[16px] md:text-[18px] font-bold font-mono">UDYAM-TS-02-0312494</span>
                </div>
-               <div className="flex flex-col items-start border-l-2 border-white/20 pl-4 md:pl-6">
-                  <span className="text-white text-[18px] md:text-[24px] font-black uppercase tracking-[0.3em] mb-1">Operation Hub</span>
-                  <span className="text-white/60 text-[16px] md:text-[22px] font-bold uppercase tracking-widest leading-none">Somajiguda, Hyderabad</span>
+               <div className="flex flex-col items-start border-l-2 border-white/20 pl-4 md:pl-6 hover:translate-x-2 transition-transform duration-300">
+                  <span className="text-white text-[14px] md:text-[16px] font-black uppercase tracking-[0.3em] mb-1 text-cyan-high">Operation Hub</span>
+                  <span className="text-white/80 text-[16px] md:text-[18px] font-bold uppercase tracking-widest leading-none">Somajiguda, Hyderabad</span>
                </div>
-               <div className="hidden md:flex flex-col items-start border-l-2 border-white/20 pl-6">
-                  <span className="text-white text-[24px] font-black uppercase tracking-[0.3em] mb-1">Impact Radius</span>
-                  <span className="text-white/60 text-[22px] font-bold uppercase tracking-widest">Loom Roll to Cloud</span>
+               <div className="hidden md:flex flex-col items-start border-l-2 border-white/20 pl-6 hover:translate-x-2 transition-transform duration-300">
+                  <span className="text-white text-[14px] md:text-[16px] font-black uppercase tracking-[0.3em] mb-1 text-cyan-high">Impact Radius</span>
+                  <span className="text-white/80 text-[16px] md:text-[18px] font-bold uppercase tracking-widest">Loom Roll to Cloud</span>
                </div>
             </div>
           </div>
@@ -192,6 +193,47 @@ export default function LRBCLanding() {
         </div>
       </section>
 
+      {/* Core Philosophy Section */}
+      <section id="philosophy" className="py-32 bg-white relative overflow-hidden">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="reveal-on-scroll text-center mb-20">
+              <div className="text-petrol-600 font-black uppercase tracking-[0.4em] text-lg sm:text-2xl mb-6">From Cost Centre to Profit Centre</div>
+              <h2 className="text-4xl sm:text-5xl md:text-7xl font-black text-slate-950 mb-8 leading-[0.9] tracking-tighter">
+                Stop Managing People. <br className="hidden sm:block" />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-petrol-600 to-cyan-high">Start Building Systems.</span>
+              </h2>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+              {[
+                { 
+                  icon: "⚙️", 
+                  title: "Systems Create Organisations", 
+                  desc: "An organisation is only as strong as its processes. We help you move from a person-dependent business to a system-driven powerhouse." 
+                },
+                { 
+                  icon: "📈", 
+                  title: "From Cost to Profit", 
+                  desc: "Most owners view operations as a cost centre. Our tailored systems turn your floor into a Profit Centre by eliminating leaks, delays, and manual errors." 
+                },
+                { 
+                  icon: "⏰", 
+                  title: "Reclaim Your Time", 
+                  desc: "Daily operations shouldn't own you. We automate the repetitive so you can focus on the strategic." 
+                }
+              ].map((item, i) => (
+                <div key={i} className="reveal-on-scroll group p-10 lg:p-12 bg-slate-50 rounded-[2.5rem] border border-slate-100 hover:border-petrol-600/30 hover:-translate-y-4 transition-all duration-500 shadow-sm hover:shadow-xl" style={{transitionDelay: `${i * 100}ms`}}>
+                  <div className="text-5xl mb-8">{item.icon}</div>
+                  <h3 className="text-2xl lg:text-3xl font-black text-slate-950 mb-6 tracking-tight">{item.title}</h3>
+                  <p className="text-slate-500 font-medium text-lg leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Expertise Section */}
       <section id="expertise" className="py-40 bg-white relative overflow-hidden">
         <div className="container mx-auto px-6 mb-24 relative z-10">
@@ -207,12 +249,11 @@ export default function LRBCLanding() {
         
         <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 relative z-10">
           {[
-            { title: "Non-Woven Act", img: nonwovenImg, tag: "Textile Engineering", desc: "Global process optimization and high-yield operational strategies for technical textiles." },
-            { title: "Factory Automation", img: automationImg, tag: "Robotics & PLC", desc: "Digital twin implementation and low-latency control logic for zero-error production." },
-            { title: "Steel Manufacturing", img: steelImg, tag: "Heavy Industry", desc: "Resilient throughput analytics and structural process audits for heavy steel production." },
-            { title: "Precision Molding", img: moldingImg, tag: "Injection Molding", desc: "High-volume automated process control for complex industrial injection molding." },
-            { title: "Pharmaceutical", img: pharmaImg, tag: "Care & Compliance", desc: "Strict regulatory oversight and high-care sterile environment compliance engineering." },
-            { title: "Loom Roll Cutting", img: nonwovenImg, tag: "Industrial Cutting", desc: "Advanced algorithmic cutting methodologies and inter-departmental barcode traceability." }
+            { title: "Precision Moulding", img: moldingImg, tag: "Injection Moulding", desc: "Automated control for complex injection cycles." },
+            { title: "Steel Manufacturing", img: steelImg, tag: "Heavy Industry", desc: "Resilient throughput analytics for heavy production." },
+            { title: "Textile & Non-Woven", img: nonwovenImg, tag: "Technical Textiles", desc: "Process optimisation for high-yield technical textiles." },
+            { title: "Pharmaceutical", img: pharmaImg, tag: "Care & Compliance", desc: "Strict regulatory oversight and sterile environment compliance." },
+            { title: "Factory Automation", img: automationImg, tag: "Smart Systems", desc: "End-to-end line integration and SCADA controls." }
           ].map((item, i) => (
             <div key={i} className="reveal-on-scroll group relative overflow-hidden rounded-[3rem] bg-slate-50 border border-slate-100 transition-all duration-700 hover:-translate-y-4 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] hover:shadow-[0_50px_100px_-20px_rgba(0,0,0,0.1)]" style={{transitionDelay: `${i * 100}ms`}}>
               <div className="h-96 overflow-hidden relative">
@@ -323,9 +364,10 @@ export default function LRBCLanding() {
               
               <div className="space-y-4">
                 {[
-                  { title: "Smart Delegation", img: automationImg, desc: "Automated task routing based on skill-level and production priority." },
-                  { title: "Dynamic Checklist", img: pharmaImg, desc: "Real-time compliance validation and stage-gate process enforcement." },
-                  { title: "Advanced FMS", img: moldingImg, desc: "Flow Management System for seamless cross-departmental handovers." }
+                  { title: "Smart Delegation & Point-Based Rewards", img: automationImg, desc: "Automatically route tasks based on priority and skill level. Every completion earns Efficiency Points, turning manual work into a measurable performance game." },
+                  { title: "Live Compliance Ledger", img: pharmaImg, desc: "Instantly track what's Done, Overdue, or Pending. No more asking for status updates; the data is live on your screen." },
+                  { title: "5-Minute Weekly Review (WRM)", img: moldingImg, desc: "Eliminate long, unproductive meetings. The WRM Dashboard generates your agenda automatically based on team performance data." },
+                  { title: "FMS (Flow Management System) SYNCED", img: steelImg, desc: "Seamless management of your high-stakes flows: Enquiry to Dispatch, Purchase Order, Requirement to Fulfilment, Order to Delivery, etc." }
                 ].map((mod, i) => (
                   <div key={i} className="group relative overflow-hidden rounded-3xl bg-white/5 border border-white/10 hover:border-cyan-high/50 transition-all duration-500 cursor-pointer">
                     <img src={mod.img} alt={mod.title} className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-50 transition-opacity duration-700" />
@@ -334,7 +376,7 @@ export default function LRBCLanding() {
                           <span className="text-3xl font-black italic">{i+1}</span>
                        </div>
                        <div>
-                          <h4 className="text-3xl font-black text-white mb-2">{mod.title}</h4>
+                          <h4 className="text-2xl font-black text-white mb-2">{mod.title}</h4>
                           <p className="text-white/60 font-bold text-lg leading-relaxed">{mod.desc}</p>
                        </div>
                     </div>
@@ -416,6 +458,108 @@ export default function LRBCLanding() {
                      <svg className="w-10 h-10 text-white transition-transform group-hover:translate-x-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                   </div>
                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Data-Driven Strategy Section */}
+      <section className="py-32 bg-white relative overflow-hidden">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex flex-col lg:flex-row gap-16 items-center">
+              <div className="lg:w-1/2 reveal-on-scroll">
+                <div className="text-petrol-600 font-black uppercase tracking-[0.4em] text-lg sm:text-2xl mb-6">The Owner's Dashboard</div>
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-slate-950 mb-8 leading-[0.95] tracking-tighter">
+                  Real Data for <br className="hidden sm:block" />
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-petrol-600 to-cyan-high">Real Decisions.</span>
+                </h2>
+                <p className="text-slate-500 font-medium text-lg md:text-xl leading-relaxed mb-8">
+                  Stop leading by "gut feeling." We build customised dashboards that pull real-time data from your production output and machine readings. See your margins, bottlenecks, and throughput in one glance, allowing you to make strategic decisions that actually impact your bottom line.
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  {["Live Production Data", "Margin Analysis", "Bottleneck Detection", "Throughput Metrics"].map((item, i) => (
+                    <span key={i} className="px-4 py-2 bg-slate-100 rounded-full text-slate-600 font-bold text-sm">{item}</span>
+                  ))}
+                </div>
+              </div>
+              <div className="lg:w-1/2 reveal-on-scroll">
+                <div className="bg-slate-950 rounded-[2.5rem] p-8 lg:p-12 shadow-2xl">
+                  <div className="grid grid-cols-2 gap-6">
+                    {[
+                      { value: "24/7", label: "Live Monitoring" },
+                      { value: "15%", label: "Avg. Margin Boost" },
+                      { value: "<5min", label: "Issue Detection" },
+                      { value: "100%", label: "Data Accuracy" }
+                    ].map((stat, i) => (
+                      <div key={i} className="text-center p-6 bg-white/5 rounded-2xl">
+                        <div className="text-3xl lg:text-4xl font-black text-petrol-600 mb-2">{stat.value}</div>
+                        <div className="text-white/60 font-bold text-sm uppercase tracking-widest">{stat.label}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Founder's Journey Section */}
+      <section className="py-32 bg-slate-950 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none" style={{backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '60px 60px'}}></div>
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-5xl mx-auto">
+            <div className="reveal-on-scroll text-center mb-16">
+              <div className="text-petrol-600 font-black uppercase tracking-[0.4em] text-lg sm:text-2xl mb-6">Founder DNA</div>
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-8 leading-[0.95] tracking-tighter">
+                Built on <span className="text-transparent bg-clip-text bg-gradient-to-r from-petrol-600 to-cyan-high">Real-World Grit</span>
+              </h2>
+              <p className="text-white/50 font-medium text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+                At Lalit Raj Business Consulting (LRBC), we don't just provide software; we provide a partnership grounded in academic excellence and official recognition. We combine the strategic depth of an MBA with the technical precision of an Engineer to build systems that are as resilient as the industries we serve.
+              </p>
+            </div>
+
+            <div className="reveal-on-scroll bg-white/5 rounded-[2.5rem] p-8 lg:p-12 border border-white/10 mb-12">
+              <p className="text-white/80 text-xl md:text-2xl font-medium italic text-center leading-relaxed">
+                "I don't just consult on systems because I studied them; I build them because I've lived the challenges of starting and scaling in India."
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[
+                { 
+                  era: "The BTech Years", 
+                  title: "Gharbanao.in", 
+                  desc: "Founded during my time at NIT Silchar, this was my first venture into the world of technical entrepreneurship, teaching me the foundational importance of product-market fit.",
+                  badge: "NIT Silchar"
+                },
+                { 
+                  era: "The MBA Years", 
+                  title: "Sneko", 
+                  desc: "A food-delivery startup built during my MBA, which honed my understanding of logistics, supply chain flow, and the critical need for 'Order-to-Delivery' automation.",
+                  badge: "Food-Tech"
+                },
+                { 
+                  era: "The Evolution", 
+                  title: "LRBC", 
+                  desc: "Today, I combine these years of startup grit with my experience at IndiaMart, Kellogg's, and Kotak Mahindra Bank to empower the Indian MSME sector.",
+                  badge: "Present"
+                }
+              ].map((item, i) => (
+                <div key={i} className="reveal-on-scroll group p-8 bg-white/5 rounded-[2rem] border border-white/10 hover:border-petrol-600/50 transition-all duration-500" style={{transitionDelay: `${i * 100}ms`}}>
+                  <span className="inline-block px-3 py-1 bg-petrol-600/20 text-petrol-600 rounded-full text-xs font-black uppercase tracking-widest mb-4">{item.badge}</span>
+                  <div className="text-white/40 font-bold text-sm uppercase tracking-widest mb-2">{item.era}</div>
+                  <h3 className="text-2xl font-black text-white mb-4">{item.title}</h3>
+                  <p className="text-white/50 font-medium leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+            
+            <div className="reveal-on-scroll mt-12 text-center">
+              <p className="text-white/60 font-bold text-lg">
+                <span className="text-petrol-600">Headquarters:</span> Based in the heart of Hyderabad, Telangana, serving a growing roster of <span className="text-white font-black">10+ active industrial clients</span> across India.
+              </p>
             </div>
           </div>
         </div>
@@ -561,58 +705,77 @@ export default function LRBCLanding() {
         ></iframe>
       </section>
 
-      {/* Footer Section */}
-      <footer className="bg-slate-950 pt-32 pb-16 border-t border-white/5 relative overflow-hidden">
+      {/* Footer Section - Dark Premium */}
+      <footer className="bg-slate-950 pt-24 pb-12 border-t border-white/5 relative overflow-hidden">
         {/* Subtle Branding Mask */}
         <div className="absolute -bottom-20 -right-20 text-[20rem] font-black text-white/[0.02] pointer-events-none select-none tracking-tighter uppercase italic">LRBC</div>
         
         <div className="container mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 sm:gap-16 md:gap-20 mb-20 sm:mb-32">
+          {/* CTA Section */}
+          <div className="mb-16 text-center">
+            <a href="#contact" className="inline-flex items-center gap-4 bg-petrol-600 text-white px-12 py-6 rounded-2xl text-xl font-black hover:bg-petrol-700 transition-all shadow-[0_20px_40px_-10px_rgba(13,74,92,0.5)] hover:shadow-[0_30px_60px_-15px_rgba(13,74,92,0.6)] group ring-1 ring-white/10">
+              Initiate Your Audit
+              <svg className="w-6 h-6 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 sm:gap-16 md:gap-20 mb-16">
             <div className="lg:col-span-2">
-              <div className="flex items-center gap-4 mb-8 sm:mb-10">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-petrol-600 rounded-xl sm:rounded-2xl flex items-center justify-center text-white font-black text-xl sm:text-2xl">L</div>
-                <span className="text-2xl sm:text-3xl font-black text-white tracking-tighter">LOOM ROLL <br /> BUSINESS CONSULTANCY</span>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="bg-white/95 backdrop-blur-sm px-3 py-2 rounded-lg shadow-sm">
+                  <img src="/Lrbc.png" alt="LRBC Logo" className="h-10 w-auto object-contain" />
+                </div>
               </div>
-              <p className="text-white/30 text-base sm:text-lg font-medium leading-relaxed max-w-md mb-8 sm:mb-12">
+              <p className="text-white/50 text-base font-medium leading-relaxed max-w-md mb-8">
+                <span className="font-black text-white">Lalit Raj Business Consulting</span><br />
                 Engineering industrial growth since 2018. Bridging the gap between traditional manufacturing and the digital future.
               </p>
-              <div className="flex flex-wrap gap-8 sm:gap-10">
-                 <div className="flex flex-col">
-                    <span className="text-petrol-600 font-black text-[10px] sm:text-xs uppercase tracking-[0.3em] mb-2">Headquarters</span>
-                    <span className="text-white/60 font-medium text-sm sm:text-base">Somajiguda, Hyderabad - 500082</span>
-                 </div>
+              <div className="space-y-4">
+                <div className="flex flex-col">
+                  <span className="text-petrol-600 font-black text-xs uppercase tracking-[0.3em] mb-1">Headquarters</span>
+                  <span className="text-white/80 font-medium text-sm">501, Jyothi Enclave, Raj Bhawan Road, Somajiguda, Hyderabad - 500082</span>
+                </div>
+                <div className="flex gap-8">
                   <div className="flex flex-col">
-                     <span className="text-petrol-600 font-black text-[10px] sm:text-xs uppercase tracking-[0.3em] mb-2">Registration</span>
-                     <span className="text-white/60 font-medium font-mono text-xs sm:text-sm">UDYAM-TS-02-0312494</span>
+                    <span className="text-petrol-600 font-black text-xs uppercase tracking-[0.3em] mb-1">MSME Registration</span>
+                    <span className="text-white/80 font-medium font-mono text-sm">UDYAM-TS-02-0312494</span>
                   </div>
-
+                  <div className="flex flex-col">
+                    <span className="text-petrol-600 font-black text-xs uppercase tracking-[0.3em] mb-1">Enterprise Type</span>
+                    <span className="text-white/80 font-medium text-sm">Micro</span>
+                  </div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-petrol-600 font-black text-xs uppercase tracking-[0.3em] mb-1">Contact</span>
+                  <span className="text-white/80 font-medium text-sm">+91 99549 53008 | contact@lalitraj.com</span>
+                </div>
               </div>
             </div>
             
             <div>
-              <h4 className="text-white font-black uppercase tracking-[0.3em] sm:tracking-[0.4em] text-[14px] sm:text-[16px] mb-8 sm:mb-10">Operations</h4>
-              <ul className="space-y-4 sm:space-y-6">
+              <h4 className="text-white font-black uppercase tracking-[0.3em] text-[14px] mb-6">Operations</h4>
+              <ul className="space-y-3">
                 {['Strategic Audit', 'Process Engineering', 'Cloud Implementation', 'Industrial Dashboarding'].map((link) => (
-                  <li key={link}><a href="#" className="text-white/40 hover:text-petrol-600 transition-colors font-bold text-base sm:text-lg">{link}</a></li>
+                  <li key={link}><a href="#" className="text-white/40 hover:text-petrol-600 transition-colors font-medium text-base">{link}</a></li>
                 ))}
               </ul>
             </div>
             
             <div>
-              <h4 className="text-white font-black uppercase tracking-[0.3em] sm:tracking-[0.4em] text-[14px] sm:text-[16px] mb-8 sm:mb-10">Connect</h4>
-              <ul className="space-y-4 sm:space-y-6">
+              <h4 className="text-white font-black uppercase tracking-[0.3em] text-[14px] mb-6">Connect</h4>
+              <ul className="space-y-3">
                 {['Contact Support', 'Privacy Protocol', 'Security Policy', 'Cookie Framework'].map((link) => (
-                  <li key={link}><a href="#" className="text-white/40 hover:text-petrol-600 transition-colors font-bold text-base sm:text-lg">{link}</a></li>
+                  <li key={link}><a href="#" className="text-white/40 hover:text-petrol-600 transition-colors font-medium text-base">{link}</a></li>
                 ))}
               </ul>
             </div>
           </div>
           
-          <div className="pt-16 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-10">
-            <p className="text-white/20 font-black uppercase tracking-[0.4em] text-[10px]">© 2026 Lalit Raj Business Consultancy. All Rights Reserved.</p>
-            <div className="flex gap-12">
-              {['IN', 'TW', 'FB'].map((social) => (
-                <a key={social} href="#" className="text-white/10 hover:text-petrol-600 transition-all font-black text-xs tracking-widest">{social}</a>
+          <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p className="text-white/20 font-bold uppercase tracking-[0.3em] text-[10px]">© 2026 Lalit Raj Business Consulting. All Rights Reserved.</p>
+            <div className="flex gap-8">
+              {['LinkedIn', 'Twitter', 'Facebook'].map((social) => (
+                <a key={social} href="#" className="text-white/20 hover:text-petrol-600 transition-all font-bold text-xs tracking-widest uppercase">{social}</a>
               ))}
             </div>
           </div>

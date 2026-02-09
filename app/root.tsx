@@ -11,7 +11,7 @@ import type { Route } from "./+types/root";
 import "./app.css";
 
 export const links: Route.LinksFunction = () => [
-  { rel: "icon", type: "image/jpeg", href: "/WhatsApp Image 2026-02-06 at 1.00.25 PM (1).jpeg" },
+  { rel: "icon", type: "image/jpeg", href: "/lrbc-icon.jpeg" },
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",
